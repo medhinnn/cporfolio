@@ -1,75 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/popper.js"></script>
+<script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
     
 
 </head>
+
 <body>
-    <div>
-    <img src="http://placehold.co/150" alt="">
-    <h1>first name last name</h1>
-    <h3>web dveloper at XYZCompany</h3>
-    <p>
-        <i>
-            {{pause and ponder in the scilence}}</i>
-        </i>
-    </p> 
+    <div class="container">
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark p-4">
+          <h5 class="text-body-emphasis h4">Collapsed content</h5>
+          <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <div class="intro">
+            
+            <img class="profile-picture" src="image/1.jpg" alt="">
+            <h1>Medhin Mulat</h1>
+            <h3>Web Developer at Defence Minister</h3>
+            <p>
+                <i>
+                    {{all human being are just like a robotic mechin for God}}</i>
+                </i>
+            </p>
+        </div>
+        <hr>
+        <div class="about-grid">
+            <div class="i-am">
+                <h3 class="sectiontitle">I am</h3>
+                <ul class="about-list">
+
+                    <li>An engineer</li>
+                    <li>A reader</li>
+                    <li>A hobby cook</li>
+                </ul>
+            </div>
+
+            <div class="i-like">
+                <h3 class="sectiontitle">I like to</h3>
+                <ul class="about-list">
+
+                    <li>Meet new people</li>
+                    <li>Play guitar</li>
+                    <li>Eat Icecream</li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="projects-heading">my project</h3>
+        <div class="projects-grid">
+            <div class="project-image-wrapper">
+                <h4>project 1</h4>
+                <img width="300" height="250" class="project-image" src="image/2.jpg" alt="">
+            </div>
+            <div class="project-image-wrapper">
+                <h4>project 2</h4>
+                <img width="300" height="250" class="project-image" src="image/3.jpg" alt="">
+            </div>
+            <div class="project-image-wrapper">
+                <h4>project 3</h4>
+                <img width="300" height="250" class="project-image" src="image/4.jpg" alt="">
+            </div>
+            <div class="project-image-wrapper">
+                <h4>project 4</h4>
+            <img width="300" height="250" class="project-image" src="image/5.jpg" alt="">
+        </div>
 </div>
-<div>            
-    <div>
-        <h3>I am</h3>
-        <ul>
-        <li>An engineer</li>
-        <li>A reader</li>
-        <li>A hobby cook</li>
-        </ul>
+        <div class="link-and-contact">
+            <div class="links">
+                <h3>Links</h3>
+                <ul class="links-list">
+                    <li>
+                        <a href="https://github.com/<user>">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/<user>">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/<user>">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+         <div class="form-cont">
+                <form action="#">
+                    <label for="email">
+                        <h4>email: </h4>
+                        <input type="email" id="email" placeholder="Enter your email" />
+                    </label>
+                    <label for="message">
+                        <h4>message: </h4>
+                        <textarea id="message">Your Message</textarea>
+                    </label>
+                    <div class="submit-button-wrapper">
+                        <input type="submit" valid="Send Message" />
+                    </div>
+                </form>
+            </div>
+            </div>
+      
+
+
+        
     </div>
 
-    <div>
-        <h3>I like to</h3>
-        <ul>
-        <li>Meet new people</li>
-        <li>Play guitar</li>
-        <li>Eat Icecream</li>
-        </ul>
-    </div>
-</div>
-<div>
-    <img src="http://placehold.co/300" alt="">
-    <img src="http://placehold.co/300" alt="">
-    <img src="http://placehold.co/300" alt="">
-    <img src="http://placehold.co/300" alt="">
-</div>
-<div>
-    <h3>Links</h3>
-    <ul>
-      <li>
-        <a href="https://github.com/<user>">Github</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/<user>">Twitter</a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/<user>">Linkedin</a>
-      </li>
-    </ul>
-</div>
-
-​​<div>
-    <form action="#">
- <label for="email">
- Email: <input type="email" id="email" placeholder="Enter your email" /> 
- </label>
- <label for="message">
- Message: <textarea id="message">Your Message</textarea>
- </label>
- <input type="submit" valid="Send Message" />
-    </form>
- </div>
- 
 
 </body>
+
 </html>
