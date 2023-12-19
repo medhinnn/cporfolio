@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MyPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+
+    
+body {
+    font-family: Courier, monospace;
+    font-size: 18px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'roboto mono', monospace;
+
+}
+
+.container {
+
+    width: 950px;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 10px 25px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+@media(max-width: 480px) {
+
+
+    .about-grid {
+
+        grid-template-columns: 100%;
+    }
+}
+
+.projects-heading {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.project-image {
+    justify-self: center;
+    padding: 4%;
+}
+
+@media(max-width: 650px) {
+
+
+    .projects-grid {
+
+        grid-template-columns: 100%;
+    }
+}
+
+.link-and-contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.links {
+    justify-self: center;
+
+}
+
+.links-list {
+    list-style: none;
+    padding: 0%;
+
+} 
+
+@media(max-width: 650px) {
+
+
+    .link-and-contact {
+
+        grid-template-columns: 100%;
+    }
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80 .16);
+}
+
+.profile-picture:hover {
+
+    box-shadow: 0 8px 12px 0 rgb(34, 60, 80 .16);
+}
+
+.i-am { 
+    text-align: left;
+    padding-left: 120px;
+    list-style: lower-alpha;
+}
+.i-like { 
+    text-align: left;
+    padding-left: 120px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+} 
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.sectiontitle{
+    font-size: 1.2em;
+    color: blueviolet;
+}
+/* .about-list{
+    list-style: none;
+} */
+form input, textarea{
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+form input[type="submit"] {
+    width: 250px;
+    
+}
+.submit-button-wrapper
+{
+    margin: 20px auto;
+
+}
+.container > div {
+    margin: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0,0,0, .75), rgba(0,0,0,0));
+
+}
+.form-cont{
+    text-align: left;
+}
+.project-image {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+    transition: all ease-in-out .5s;
+}
+.project-image:hover {
+    filter: brightness(.75);
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, .16);
+}
+.project-image-wrapper{
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+
+}
+.project-image-wrapper:hover > h4 {
+    visibility: visible;
+
+}
+.project-image-wrapper>h4 {   
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% -50%);
+color: white;
+visibility: hidden;
+z-index: 2;
+transition: all ease-in-out .5s;
+}
+.profile-picture:hover{
+    filter: brightness(.75);
+    box-shadow: 0 4px 6px 0 rgb(34, 60, 80, .16);
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro">
+        
+        <img class="profile-picture" src="1.jpg" alt="">
+        <h1>Medhin Mulat</h1>
+        <h3>Web Developer at Defence Minister</h3>
+        <p>
+            <i>
+                {{all human being are just like a robotic mechin for God}}</i>
+            </i>
+        </p>
+    </div>
+    <hr>
+    <div class="about-grid">
+        <div class="i-am">
+            <h3 class="sectiontitle">I am</h3>
+            <ul class="about-list">
+
+                <li>An engineer</li>
+                <li>A reader</li>
+                <li>A hobby cook</li>
+            </ul>
+        </div>
+
+        <div class="i-like">
+            <h3 class="sectiontitle">I like to</h3>
+            <ul class="about-list">
+
+                <li>Meet new people</li>
+                <li>Play guitar</li>
+                <li>Eat Icecream</li>
+            </ul>
+        </div>
+    </div>
+  </section><!-- End Services Section -->
+  <!-- ======= Navbar ======= -->
+  
+        
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container" style="padding-left: 350px;">
+      <a class="navbar-brand" href="index.html">My project</a>
+     
+    </div>
+  </nav>
+
+  <main id="main">
+
+    
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>project</h3>
+                <span>1</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_1.jpg">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>project</h3>
+                <span>2</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_2.jpg">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>project</h3>
+                <span>3</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_3.jpg">
+            </a>
+          </div>
+          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>project</h3>
+                <span>4</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_4.jpg">
+            </a>
+          </div>
+          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>project</h3>
+                <span>5</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_5.jpg">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>project</h3>
+                <span>6</span>
+              </div>
+              <img class="img-fluid" src="assets/img/img_6.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+    <!-- ======= Clients Section ======= -->
+    
+
+    <!-- ======= Services Section ======= -->
+    
+
+    <!-- ======= Testimonials Section ======= -->
+    
+
+  <!-- ======= Footer ======= -->
+  <footer class="page-footer">
+    <div class="container" style="background-color: black;">
+        <div class="row" style="color: white; padding-bottom: 50px;">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>1640 Riverside Drive, Hill Valley, California
+            <br/>info@mywebsite.com
+            <br/>+ 01 234 567 88
+            <br/>+ 01 234 567 89</p>
+        </div>
+    <div>
+    <div class="footer-copyright text-center">© 2023 Copyright: MyWebsite.com</div>
+</footer>
+       
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

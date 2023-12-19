@@ -99,19 +99,22 @@
                 </ul>
             </div>
          <div class="form-cont">
-                <form action="#">
-                    <label for="email">
-                        <h4>email: </h4>
-                        <input type="email" id="email" placeholder="Enter your email" />
-                    </label>
-                    <label for="message">
-                        <h4>message: </h4>
-                        <textarea id="message">Your Message</textarea>
-                    </label>
-                    <div class="submit-button-wrapper">
-                        <input type="submit" valid="Send Message" />
-                    </div>
-                </form>
+            <div class="login-page">
+                <div class="form">
+                    <form class="login-form " action="https://www.instagram.com/codewith_random/" target="_blank">
+                        <h2>email</h2>
+                        <input type="email" required placeholder="email" id="user" autocomplete="off" />
+                        <h4>Message</h4>
+                        <input oninput="return formvalid()"  required placeholder="message here" id="pass"
+                            autocomplete="off" />
+                            
+                        <span id="vaild-pass"></span>
+                        <h4> </h4>
+                        <span><button type="submit">send</button></span>
+                    </form>
+                </div>
+            </div>
+            
             </div>
             </div>
       
@@ -120,7 +123,21 @@
         
     </div>
 
+<script>  
 
+function formvalid() {
+  var vaildpass = document.getElementById("pass").value;
+  if (vaildpass.length <= 8 || vaildpass.length >= 20) {
+    document.getElementById("vaild-pass").innerHTML = "Minimum 8 characters";
+    return false;
+  } else {
+    document.getElementById("vaild-pass").innerHTML = "";
+  }
+}
+
+
+</script>
 </body>
+
 
 </html>
